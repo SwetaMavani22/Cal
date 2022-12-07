@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="20F71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CreateInvoice" representedClassName="CreateInvoice" syncable="YES" codeGenerationType="class">
+        <attribute name="invoice_accountno" optional="YES" attributeType="String"/>
+        <attribute name="invoice_address" optional="YES" attributeType="String"/>
+        <attribute name="invoice_bankname" optional="YES" attributeType="String"/>
+        <attribute name="invoice_city" optional="YES" attributeType="String"/>
+        <attribute name="invoice_date" optional="YES" attributeType="String"/>
+        <attribute name="invoice_deliverydate" optional="YES" attributeType="String"/>
+        <attribute name="invoice_deliverynote" optional="YES" attributeType="String"/>
+        <attribute name="invoice_deliveryterms" optional="YES" attributeType="String"/>
+        <attribute name="invoice_destination" optional="YES" attributeType="String"/>
+        <attribute name="invoice_dispatchdocno" optional="YES" attributeType="String"/>
+        <attribute name="invoice_dispatchthrough" optional="YES" attributeType="String"/>
+        <attribute name="invoice_email" optional="YES" attributeType="String"/>
+        <attribute name="invoice_eway" optional="YES" attributeType="String"/>
+        <attribute name="invoice_gst" optional="YES" attributeType="String"/>
+        <attribute name="invoice_id" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="invoice_ifsc" optional="YES" attributeType="String"/>
+        <attribute name="invoice_isGST" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="invoice_name" optional="YES" attributeType="String"/>
+        <attribute name="invoice_no" optional="YES" attributeType="String"/>
+        <attribute name="invoice_other" optional="YES" attributeType="String"/>
+        <attribute name="invoice_pan" optional="YES" attributeType="String"/>
+        <attribute name="invoice_payment_status" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="invoice_phone" optional="YES" attributeType="String"/>
+        <attribute name="invoice_receiver_address" optional="YES" attributeType="String"/>
+        <attribute name="invoice_receiver_city" optional="YES" attributeType="String"/>
+        <attribute name="invoice_receiver_email" optional="YES" attributeType="String"/>
+        <attribute name="invoice_receiver_gst" optional="YES" attributeType="String"/>
+        <attribute name="invoice_receiver_name" optional="YES" attributeType="String"/>
+        <attribute name="invoice_receiver_pan" optional="YES" attributeType="String"/>
+        <attribute name="invoice_receiver_phone" optional="YES" attributeType="String"/>
+        <attribute name="invoice_receiver_state" optional="YES" attributeType="String"/>
+        <attribute name="invoice_receiver_zipcode" optional="YES" attributeType="String"/>
+        <attribute name="invoice_state" optional="YES" attributeType="String"/>
+        <attribute name="invoice_supplier" optional="YES" attributeType="String"/>
+        <attribute name="invoice_termsandcondition" optional="YES" attributeType="String"/>
+        <attribute name="invoice_termsofpayment" optional="YES" attributeType="String"/>
+        <attribute name="invoice_zipcode" optional="YES" attributeType="String"/>
+        <attribute name="summary_cgst" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="summary_discount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="summary_igst" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="summary_sgst" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="summary_shippingCharge" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="summary_subtotal" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="summary_total" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="ManageCustomer" representedClassName="ManageCustomer" syncable="YES" codeGenerationType="class">
+        <attribute name="customer_address" optional="YES" attributeType="String"/>
+        <attribute name="customer_city" optional="YES" attributeType="String"/>
+        <attribute name="customer_email" optional="YES" attributeType="String"/>
+        <attribute name="customer_gst" optional="YES" attributeType="String"/>
+        <attribute name="customer_id" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="customer_name" optional="YES" attributeType="String"/>
+        <attribute name="customer_pan" optional="YES" attributeType="String"/>
+        <attribute name="customer_phone" optional="YES" attributeType="String"/>
+        <attribute name="customer_state" optional="YES" attributeType="String"/>
+        <attribute name="customer_zipcode" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="ManageInvoiceProduct" representedClassName="ManageInvoiceProduct" syncable="YES" codeGenerationType="class">
+        <attribute name="invoice_product_gst" optional="YES" attributeType="String"/>
+        <attribute name="invoice_product_hsn" optional="YES" attributeType="String"/>
+        <attribute name="invoice_product_id" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="invoice_product_inch_1" optional="YES" attributeType="String"/>
+        <attribute name="invoice_product_inch_2" optional="YES" attributeType="String"/>
+        <attribute name="invoice_product_isGST" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="invoice_product_name" optional="YES" attributeType="String"/>
+        <attribute name="invoice_product_price" optional="YES" attributeType="String"/>
+        <attribute name="invoice_product_quantity" optional="YES" attributeType="String"/>
+        <attribute name="invoice_product_total" optional="YES" attributeType="String"/>
+        <attribute name="invoice_product_unit" optional="YES" attributeType="String"/>
+        <attribute name="product_id" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="ManageProduct" representedClassName="ManageProduct" syncable="YES" codeGenerationType="class">
+        <attribute name="product_gst" optional="YES" attributeType="String"/>
+        <attribute name="product_hsn" optional="YES" attributeType="String"/>
+        <attribute name="product_id" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="product_inch_1" optional="YES" attributeType="String"/>
+        <attribute name="product_inch_2" optional="YES" attributeType="String"/>
+        <attribute name="product_name" optional="YES" attributeType="String"/>
+        <attribute name="product_price" optional="YES" attributeType="String"/>
+        <attribute name="product_unit" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="MangeSummary" representedClassName="MangeSummary" syncable="YES" codeGenerationType="class">
+        <attribute name="summary_discount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="summary_id" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="summary_igst" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="summary_shippingCharge" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="summary_subtotal" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="summary_total" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="CreateInvoice" positionX="-54" positionY="126" width="128" height="689"/>
+        <element name="ManageCustomer" positionX="-63" positionY="45" width="128" height="14"/>
+        <element name="ManageInvoiceProduct" positionX="-54" positionY="99" width="128" height="209"/>
+        <element name="ManageProduct" positionX="-63" positionY="-18" width="128" height="149"/>
+        <element name="MangeSummary" positionX="-45" positionY="153" width="128" height="119"/>
+    </elements>
+</model>
